@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bg">
+     <head>
+    <meta charset="UTF-8">
+     <title>Създаване на CV</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+    <div class="container">
+        <h2>Създаване на CV</h2>
+        <form id="cvForm">
+            <label>Име</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label>Презиме</label>
+            <input type="text" id="middle_name" name="middle_name">
+            
+            <label>Фамилия</label>
+            <input type="text" id="last_name" name="last_name" required>
+            
+            <label>Дата на раждане</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label>Изберете университет</label>
+            <select id="university" name="university" required>
+                <!-- Options will be populated by AJAX -->
+            </select>
+            <button type="button" class="small" id="addUniversityBtn">Добави университет</button>
+            
+            <label>Умения в технологии (multichoice)</label>
+            <select id="skills" name="skills[]" multiple required>
+                <!-- Options will be populated by AJAX -->
+            </select>
+            <button type="button" class="small" id="addSkillBtn">Добави технология</button>
+            
+            <button type="submit">Запис на CV</button>
+        </form>
+    </div>
+    
+    <div class="popup" id="universityPopup">
+        <h3>Добавяне на нов университет</h3>
+        <label>Име на университет</label>
+        <input type="text" id="universityName">
+        <label>Акредитационна оценка</label>
+        <input type="text" id="universityRating">
+        <button type="button" id="saveUniversityBtn">Запис</button>
+        <button type="button" id="closeUniversityPopup">Затвори</button>
+    </div>
+    
+    <div class="popup" id="skillPopup">
+        <h3>Добавяне на нова технология</h3>
+        <label>Име на технологията</label>
+        <input type="text" id="skillName">
+        <button type="button" id="saveSkillBtn">Запис</button>
+        <button type="button" id="closeSkillPopup">Затвори</button>
+    </div>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>

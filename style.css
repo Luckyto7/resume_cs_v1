@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    color:blue;
+    
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+.h2.container {
+    text-align:center;
+}
+input, select, button {
+    width: calc(80% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button.small {
+    margin: 0%;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+button.small:first-child {
+    margin-right: 4%;
+    display: block;
+}
+
+.popup {
+    color:blue;
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background: #f6f5f7;
+    padding: 20px;
+    border: 1px solid #252424;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup button {
+    width: calc(50% - 22px);
+    display: inline-block;
+}
